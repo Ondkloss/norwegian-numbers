@@ -7,7 +7,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='norwegian-numbers',
-    version='1.0.0',
+    version='1.0.1',
     author='Halvor Holsten Strand',
     author_email='halvor.holsten.strand@gmail.com',
     url='https://github.com/Ondkloss/norwegian-numbers',

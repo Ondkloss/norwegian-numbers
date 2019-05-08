@@ -7,36 +7,36 @@ class TestKid(unittest.TestCase):
 
     # MOD10CD tests
     def test_mod10_control_digit(self):
-        self.assertEqual(6, internal.make_mod10_control_digit('234567', [2, 1]))
+        self.assertEqual(6, internal._make_mod10_control_digit('234567', [2, 1]))
 
     def test_mod10_control_digit_0(self):
-        self.assertEqual(0, internal.make_mod10_control_digit('0', [2, 1]))
+        self.assertEqual(0, internal._make_mod10_control_digit('0', [2, 1]))
 
     def test_mod10_control_digit_error(self):
         with self.assertRaises(ValueError):
-            internal.make_mod10_control_digit('abc', [2, 1])
+            internal._make_mod10_control_digit('abc', [2, 1])
 
     def test_mod10_control_digit_error_blank(self):
         with self.assertRaises(ValueError):
-            internal.make_mod10_control_digit('', [2, 1])
+            internal._make_mod10_control_digit('', [2, 1])
 
     # MOD11CD tests
     def test_mod11_control_digit(self):
-        self.assertEqual(3, internal.make_mod11_control_digit('1234567890', [2, 3, 4, 5, 6, 7]))
+        self.assertEqual(3, internal._make_mod11_control_digit('1234567890', [2, 3, 4, 5, 6, 7]))
 
     def test_mod11_control_digit_0(self):
-        self.assertEqual(0, internal.make_mod11_control_digit('31', [2, 3, 4, 5, 6, 7]))
+        self.assertEqual(0, internal._make_mod11_control_digit('31', [2, 3, 4, 5, 6, 7]))
 
     def test_mod11_control_digit_dash(self):
-        self.assertEqual('-', internal.make_mod11_control_digit('40', [2, 3, 4, 5, 6, 7]))
+        self.assertEqual('-', internal._make_mod11_control_digit('40', [2, 3, 4, 5, 6, 7]))
 
     def test_mod10_control_digit_error(self):
         with self.assertRaises(ValueError):
-            internal.make_mod11_control_digit('abc', [2, 3, 4, 5, 6, 7])
+            internal._make_mod11_control_digit('abc', [2, 3, 4, 5, 6, 7])
 
     def test_mod11_control_digit_error_blank(self):
         with self.assertRaises(ValueError):
-            internal.make_mod11_control_digit('', [2, 3, 4, 5, 6, 7])
+            internal._make_mod11_control_digit('', [2, 3, 4, 5, 6, 7])
 
     # KID tests
     def test_kid_mod10(self):

@@ -81,6 +81,17 @@ Or if you have tox:
 
     tox
 
+## Sources
+
+Some sources on the background material:
+
+* [KID-nummer](https://no.wikipedia.org/wiki/KID-nummer)
+* [Fødselsnummer](https://no.wikipedia.org/wiki/F%C3%B8dselsnummer)
+* [Organisasjonsnummer](https://no.wikipedia.org/wiki/Organisasjonsnummer)
+* [Kontonummer](https://no.wikipedia.org/wiki/Kontonummer)
+* [MOD10](https://no.wikipedia.org/wiki/MOD10)
+* [MOD11](https://no.wikipedia.org/wiki/MOD11)
+
 ## Distribution
 
 The distribution was created by the following commands:
