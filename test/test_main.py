@@ -40,7 +40,6 @@ class TestMain(unittest.TestCase):
     def test_main_verify_organisation(self):
         result = internal.main(['-v', 'organisation', '123456785'])
         self.assertEqual(True, result)
-        self.assertFalse(True)
 
     def test_main_verify_birth(self):
         result = internal.main(['-v', 'birth', '31129956715'])
