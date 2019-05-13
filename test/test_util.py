@@ -53,6 +53,9 @@ class TestKid(unittest.TestCase):
         with self.assertRaises(ValueError):
             nn.make_kid_number('abc')
 
+    def test_kid_mod10_error_verify(self):
+        nn.verify_kid_number('abc')
+
     def test_kid_mod10_error_len(self):
         with self.assertRaises(ValueError):
             nn.make_kid_number('01234567890123456789012345')

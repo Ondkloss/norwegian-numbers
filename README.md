@@ -1,6 +1,6 @@
 # Norwegian numbers
 
-[![Build Status](https://travis-ci.com/Ondkloss/norwegian-numbers.svg?branch=master)](https://travis-ci.com/Ondkloss/norwegian-numbers)
+[![PyPI](https://img.shields.io/pypi/v/norwegian-numbers.svg)](https://pypi.org/project/norwegian-numbers) [![Build Status](https://travis-ci.com/Ondkloss/norwegian-numbers.svg?branch=master)](https://travis-ci.com/Ondkloss/norwegian-numbers) [![Coverage Status](https://coveralls.io/repos/github/Ondkloss/norwegian-numbers/badge.svg?branch=master)](https://coveralls.io/github/Ondkloss/norwegian-numbers?branch=master) [![License](https://img.shields.io/pypi/l/norwegian-numbers.svg)](https://github.com/Ondkloss/norwegian-numbers/blob/master/LICENSE)
 
 Make and verify official Norwegian numbers:
 
@@ -80,6 +80,11 @@ To run the tests:
 Or if you have tox:
 
     tox
+
+Or for coverage (with html report):
+
+    coverage run -m unittest discover
+    coverage html
 
 ## Sources
 

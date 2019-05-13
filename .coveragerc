@@ -1,0 +1,6 @@
+[run]
+source = norwegian_numbers
+
+[report]
+exclude_lines =
+    if __name__ == .__main__.:

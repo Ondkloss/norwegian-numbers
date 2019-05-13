@@ -1,8 +1,10 @@
 .tox
 .vscode
+.coverage
 __pycache__
 build
 dist
 env
+htmlcov
 *.egg-info
 *.pyc
